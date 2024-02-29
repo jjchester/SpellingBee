@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "hexgrid",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ksemianov/HexGrid",
+      "state" : {
+        "revision" : "e6c67fc50fa8670f45795062619c6aa984a759a9",
+        "version" : "0.1.2"
+      }
+    }
+  ],
+  "version" : 2
+}

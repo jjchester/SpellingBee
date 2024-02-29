@@ -1,0 +1,465 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D0BBC4B32B904184000D4582 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = D0BBC4B22B904184000D4582 /* RealityKitContent */; };
+		D0BBC4B52B904184000D4582 /* SpellingBeeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BBC4B42B904184000D4582 /* SpellingBeeApp.swift */; };
+		D0BBC4B72B904184000D4582 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BBC4B62B904184000D4582 /* ContentView.swift */; };
+		D0BBC4B92B904185000D4582 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0BBC4B82B904185000D4582 /* Assets.xcassets */; };
+		D0BBC4BC2B904185000D4582 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0BBC4BB2B904185000D4582 /* Preview Assets.xcassets */; };
+		D0BBC4C52B9041AE000D4582 /* HexGrid in Frameworks */ = {isa = PBXBuildFile; productRef = D0BBC4C42B9041AE000D4582 /* HexGrid */; };
+		D0BBC4EC2B904203000D4582 /* LetterButtonGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BBC4EB2B904203000D4582 /* LetterButtonGrid.swift */; };
+		D0BBC4F12B904231000D4582 /* FoundWordsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BBC4F02B904231000D4582 /* FoundWordsList.swift */; };
+		D0BBC4F82B904254000D4582 /* LetterSets.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BBC4F32B904254000D4582 /* LetterSets.swift */; };
+		D0BBC4F92B904254000D4582 /* DictionaryWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BBC4F42B904254000D4582 /* DictionaryWords.swift */; };
+		D0BBC4FA2B904254000D4582 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BBC4F52B904254000D4582 /* Errors.swift */; };
+		D0BBC4FB2B904254000D4582 /* LetterGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BBC4F62B904254000D4582 /* LetterGenerator.swift */; };
+		D0BBC4FC2B904254000D4582 /* PermutationGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BBC4F72B904254000D4582 /* PermutationGenerator.swift */; };
+		D0BBC4FE2B904278000D4582 /* LetterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BBC4FD2B904278000D4582 /* LetterButton.swift */; };
+		D0BBC5022B905012000D4582 /* words_alpha.txt in Resources */ = {isa = PBXBuildFile; fileRef = D0BBC5002B905012000D4582 /* words_alpha.txt */; };
+		D0BBC5032B905012000D4582 /* LetterBank.txt in Resources */ = {isa = PBXBuildFile; fileRef = D0BBC5012B905012000D4582 /* LetterBank.txt */; };
+		D0BBC5052B905512000D4582 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BBC5042B905512000D4582 /* Extensions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D0BBC4AD2B904184000D4582 /* SpellingBee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpellingBee.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0BBC4B12B904184000D4582 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
+		D0BBC4B42B904184000D4582 /* SpellingBeeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellingBeeApp.swift; sourceTree = "<group>"; };
+		D0BBC4B62B904184000D4582 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D0BBC4B82B904185000D4582 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D0BBC4BB2B904185000D4582 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D0BBC4BD2B904185000D4582 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0BBC4EB2B904203000D4582 /* LetterButtonGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterButtonGrid.swift; sourceTree = "<group>"; };
+		D0BBC4F02B904231000D4582 /* FoundWordsList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoundWordsList.swift; sourceTree = "<group>"; };
+		D0BBC4F32B904254000D4582 /* LetterSets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LetterSets.swift; sourceTree = "<group>"; };
+		D0BBC4F42B904254000D4582 /* DictionaryWords.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryWords.swift; sourceTree = "<group>"; };
+		D0BBC4F52B904254000D4582 /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		D0BBC4F62B904254000D4582 /* LetterGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LetterGenerator.swift; sourceTree = "<group>"; };
+		D0BBC4F72B904254000D4582 /* PermutationGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PermutationGenerator.swift; sourceTree = "<group>"; };
+		D0BBC4FD2B904278000D4582 /* LetterButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LetterButton.swift; path = ../../../../Test/Test/Views/Components/LetterButton.swift; sourceTree = "<group>"; };
+		D0BBC5002B905012000D4582 /* words_alpha.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = words_alpha.txt; sourceTree = "<group>"; };
+		D0BBC5012B905012000D4582 /* LetterBank.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LetterBank.txt; sourceTree = "<group>"; };
+		D0BBC5042B905512000D4582 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D0BBC4AA2B904184000D4582 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0BBC4C52B9041AE000D4582 /* HexGrid in Frameworks */,
+				D0BBC4B32B904184000D4582 /* RealityKitContent in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D0BBC4A42B904184000D4582 = {
+			isa = PBXGroup;
+			children = (
+				D0BBC4AF2B904184000D4582 /* SpellingBee */,
+				D0BBC4B02B904184000D4582 /* Packages */,
+				D0BBC4AE2B904184000D4582 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D0BBC4AE2B904184000D4582 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D0BBC4AD2B904184000D4582 /* SpellingBee.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D0BBC4AF2B904184000D4582 /* SpellingBee */ = {
+			isa = PBXGroup;
+			children = (
+				D0BBC4FF2B905012000D4582 /* Assets */,
+				D0BBC4F22B904254000D4582 /* Utility */,
+				D0BBC4EA2B9041F7000D4582 /* Views */,
+				D0BBC4B42B904184000D4582 /* SpellingBeeApp.swift */,
+				D0BBC4B62B904184000D4582 /* ContentView.swift */,
+				D0BBC4B82B904185000D4582 /* Assets.xcassets */,
+				D0BBC4BD2B904185000D4582 /* Info.plist */,
+				D0BBC4BA2B904185000D4582 /* Preview Content */,
+			);
+			path = SpellingBee;
+			sourceTree = "<group>";
+		};
+		D0BBC4B02B904184000D4582 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				D0BBC4B12B904184000D4582 /* RealityKitContent */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		D0BBC4BA2B904185000D4582 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D0BBC4BB2B904185000D4582 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D0BBC4EA2B9041F7000D4582 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D0BBC4ED2B904212000D4582 /* Components */,
+				D0BBC4F02B904231000D4582 /* FoundWordsList.swift */,
+				D0BBC4EB2B904203000D4582 /* LetterButtonGrid.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D0BBC4ED2B904212000D4582 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				D0BBC4FD2B904278000D4582 /* LetterButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		D0BBC4F22B904254000D4582 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				D0BBC4F32B904254000D4582 /* LetterSets.swift */,
+				D0BBC4F42B904254000D4582 /* DictionaryWords.swift */,
+				D0BBC4F52B904254000D4582 /* Errors.swift */,
+				D0BBC4F62B904254000D4582 /* LetterGenerator.swift */,
+				D0BBC4F72B904254000D4582 /* PermutationGenerator.swift */,
+				D0BBC5042B905512000D4582 /* Extensions.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		D0BBC4FF2B905012000D4582 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				D0BBC5002B905012000D4582 /* words_alpha.txt */,
+				D0BBC5012B905012000D4582 /* LetterBank.txt */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D0BBC4AC2B904184000D4582 /* SpellingBee */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0BBC4C02B904185000D4582 /* Build configuration list for PBXNativeTarget "SpellingBee" */;
+			buildPhases = (
+				D0BBC4A92B904184000D4582 /* Sources */,
+				D0BBC4AA2B904184000D4582 /* Frameworks */,
+				D0BBC4AB2B904184000D4582 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpellingBee;
+			packageProductDependencies = (
+				D0BBC4B22B904184000D4582 /* RealityKitContent */,
+				D0BBC4C42B9041AE000D4582 /* HexGrid */,
+			);
+			productName = SpellingBee;
+			productReference = D0BBC4AD2B904184000D4582 /* SpellingBee.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D0BBC4A52B904184000D4582 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					D0BBC4AC2B904184000D4582 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = D0BBC4A82B904184000D4582 /* Build configuration list for PBXProject "SpellingBee" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D0BBC4A42B904184000D4582;
+			packageReferences = (
+				D0BBC4C32B9041AE000D4582 /* XCRemoteSwiftPackageReference "HexGrid" */,
+			);
+			productRefGroup = D0BBC4AE2B904184000D4582 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D0BBC4AC2B904184000D4582 /* SpellingBee */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D0BBC4AB2B904184000D4582 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0BBC5032B905012000D4582 /* LetterBank.txt in Resources */,
+				D0BBC5022B905012000D4582 /* words_alpha.txt in Resources */,
+				D0BBC4BC2B904185000D4582 /* Preview Assets.xcassets in Resources */,
+				D0BBC4B92B904185000D4582 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D0BBC4A92B904184000D4582 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0BBC4FE2B904278000D4582 /* LetterButton.swift in Sources */,
+				D0BBC4FC2B904254000D4582 /* PermutationGenerator.swift in Sources */,
+				D0BBC4F82B904254000D4582 /* LetterSets.swift in Sources */,
+				D0BBC4B72B904184000D4582 /* ContentView.swift in Sources */,
+				D0BBC4FB2B904254000D4582 /* LetterGenerator.swift in Sources */,
+				D0BBC4F92B904254000D4582 /* DictionaryWords.swift in Sources */,
+				D0BBC4FA2B904254000D4582 /* Errors.swift in Sources */,
+				D0BBC4EC2B904203000D4582 /* LetterButtonGrid.swift in Sources */,
+				D0BBC4B52B904184000D4582 /* SpellingBeeApp.swift in Sources */,
+				D0BBC5052B905512000D4582 /* Extensions.swift in Sources */,
+				D0BBC4F12B904231000D4582 /* FoundWordsList.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D0BBC4BE2B904185000D4582 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = xros;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				XROS_DEPLOYMENT_TARGET = 1.0;
+			};
+			name = Debug;
+		};
+		D0BBC4BF2B904185000D4582 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = xros;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+				XROS_DEPLOYMENT_TARGET = 1.0;
+			};
+			name = Release;
+		};
+		D0BBC4C12B904185000D4582 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SpellingBee/Preview Content\"";
+				DEVELOPMENT_TEAM = UL69KA454U;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.justinchester.SpellingBee;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+			};
+			name = Debug;
+		};
+		D0BBC4C22B904185000D4582 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SpellingBee/Preview Content\"";
+				DEVELOPMENT_TEAM = UL69KA454U;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.justinchester.SpellingBee;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D0BBC4A82B904184000D4582 /* Build configuration list for PBXProject "SpellingBee" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0BBC4BE2B904185000D4582 /* Debug */,
+				D0BBC4BF2B904185000D4582 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0BBC4C02B904185000D4582 /* Build configuration list for PBXNativeTarget "SpellingBee" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0BBC4C12B904185000D4582 /* Debug */,
+				D0BBC4C22B904185000D4582 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D0BBC4C32B9041AE000D4582 /* XCRemoteSwiftPackageReference "HexGrid" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ksemianov/HexGrid";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D0BBC4B22B904184000D4582 /* RealityKitContent */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RealityKitContent;
+		};
+		D0BBC4C42B9041AE000D4582 /* HexGrid */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D0BBC4C32B9041AE000D4582 /* XCRemoteSwiftPackageReference "HexGrid" */;
+			productName = HexGrid;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = D0BBC4A52B904184000D4582 /* Project object */;
+}
