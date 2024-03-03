@@ -28,11 +28,18 @@ struct LetterButtonGrid: View {
         .init(offsetCoordinate: .init(row: 2, col: 2), index: 6),
     ]
     let letters: [Character]
-
+    
     var body: some View {
         HexGrid(cells) { cell in
-            LetterButton(letter: self.letters[cell.index], color: cell.index == 2 ? Color("darkYellow") : .gray, selectedLetters: $selectedLetters)
-                .padding(6)
+            let letter = letters[cell.index]
+                LetterButton(buttonAction: {
+                    selectedLetters.append(letter)
+                }, buttonContent: Text(String(letter))
+                                    .foregroundStyle(.white)
+                                    .font(.title),
+                 color: cell.index == 2 ? Color("darkYellow") : .gray)
+                    .padding(6)
+            
         }
         .padding()
     }

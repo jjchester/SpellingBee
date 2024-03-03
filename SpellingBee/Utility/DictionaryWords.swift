@@ -40,22 +40,23 @@ struct DictionaryWords {
     }
     
     // Binary search as word list is sorted
-    func exists(target: String) -> Bool {
+    func exists(_ target: String) -> Bool {
         let target = target.lowercased()
         var left = 0
         var right = words.count - 1
         
         while left <= right {
-            let mid = left + (right - left) / 2
-            if words[mid] == target {
-                return true // Element found
-            } else if words[mid] < target {
-                left = mid + 1 // Search in the right half
+            let mid = (left + right) / 2
+            let midWord = words[mid]
+            
+            if midWord == target {
+                return true
+            } else if midWord < target {
+                left = mid + 1
             } else {
-                right = mid - 1 // Search in the left half
+                right = mid - 1
             }
         }
-        
-        return false // Element not found
+        return false
     }
 }

@@ -4,6 +4,9 @@
 //
 //  Created by Justin Chester on 2024-02-28.
 //
+/**
+ This stuff only ever gets used for generating new words. Will probably move these to a web service eventually but just needed an initial word list.
+ */
 
 import Foundation
 
@@ -25,7 +28,7 @@ struct WordGenerator {
                 // Check if each permutation exists in the dictionary words
                 for permutation in permutations {
                     let permutationString = String(permutation)
-                    if permutationString.contains(generatedCharacters[2]) && DictionaryWords.shared.exists(target: permutationString) {
+                    if permutationString.contains(generatedCharacters[2]) && DictionaryWords.shared.exists(permutationString) {
                         // Increment the count of successful words for the associated 7-letter group
                         let sevenLetterGroup = String(generatedCharacters.prefix(7))
                         successfulWordsCount[sevenLetterGroup, default: 0] += 1
@@ -50,13 +53,13 @@ struct WordGenerator {
     
     func getValidWordsFromSet(set: [Character]) {
         var results: [Int: [String]] = [:]
-        for length in 2...6 {
+        for length in 2...9 {
             let permutations = ["\(set[0])","\(set[1])","\(set[2])","\(set[3])","\(set[4])","\(set[5])","\(set[6])"].permutations(length: length, allowRepeats: true)
 
             // Check if each permutation exists in the dictionary words
             for permutation in permutations {
                 let permutationString = String(permutation.joined())
-                if permutationString.contains(set[2]) && DictionaryWords.shared.exists(target: permutationString) {
+                if permutationString.contains(set[2]) && DictionaryWords.shared.exists(permutationString) {
                     // Increment the count of successful words for the associated 7-letter group
                     if results[length] != nil {
                         results[length]?.append(permutationString)
@@ -66,15 +69,12 @@ struct WordGenerator {
                 }
             }
         }
-        var count = 0
         for key in results.keys.sorted() {
             print("Words for length \(key)")
             for str in results[key]! {
                 print(str)
-                count += results[key]!.count / key
             }
         }
-        print("Total words: \(count)")
     }
 
     private func generatePermutations<T>(ofLength length: Int, from elements: [T]) -> [[T]] {
@@ -90,53 +90,6 @@ struct WordGenerator {
             permutations += subPermutations.map { [element] + $0 }
         }
         return permutations
-    }
-    
-    func removeDuplicateCombinations() {
-        do {
-            let inputFilePath = "/Users/justin/Desktop/results.txt"
-            let outputFilePath = "/Users/justin/Desktop/filtered.txt"
-            // Read contents from input file
-            let contents = try String(contentsOfFile: inputFilePath, encoding: .utf8)
-            
-            // Split contents into lines
-            let lines = contents.components(separatedBy: .newlines)
-            
-            // Create a set to store unique combinations
-            var uniqueCombinations: [String: (String, Int)] = [:]
-            
-            // Process each line
-            for line in lines {
-                // Extract letters and number from the line
-                let components = line.components(separatedBy: ":")
-                guard components.count == 2, let letters = components.first, let numberString = components.last else {
-                    continue // Skip invalid lines
-                }
-                
-                // Extract number
-                guard let number = Int(numberString.trimmingCharacters(in: .whitespaces)) else {
-                    continue // Skip invalid numbers
-                }
-                let sorted = String(letters.sorted())
-                if let _ = uniqueCombinations[sorted] {
-                    uniqueCombinations[sorted] = (uniqueCombinations[sorted]!.0, uniqueCombinations[sorted]!.1)
-                } else {
-                    uniqueCombinations[sorted] = (letters, number)
-                }
-            }
-            
-            let sorted = uniqueCombinations.values.sorted() { $1.1 < $0.1 }
-            // Write unique combinations to output file
-            let outputContent = sorted.map { (letters, num) in
-                "\(letters): \(num)"
-            }.joined(separator: "\n")
-            
-            try outputContent.write(toFile: outputFilePath, atomically: true, encoding: .utf8)
-            
-            print("Unique combinations written to \(outputFilePath)")
-        } catch {
-            print("Error:", error.localizedDescription)
-        }
     }
 }
 

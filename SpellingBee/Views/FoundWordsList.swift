@@ -18,6 +18,8 @@ struct FoundWordsList: View {
                 ForEach(foundWords, id: \.self) { word in
                     Text(word)
                         .font(.title3)
+                        .transition(.opacity.animation(.linear))
+                        .id(word)
                 }
             }
             .scrollIndicators(.hidden)

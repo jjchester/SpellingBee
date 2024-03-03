@@ -19,7 +19,7 @@
 		D0BBC4F92B904254000D4582 /* DictionaryWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BBC4F42B904254000D4582 /* DictionaryWords.swift */; };
 		D0BBC4FA2B904254000D4582 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BBC4F52B904254000D4582 /* Errors.swift */; };
 		D0BBC4FB2B904254000D4582 /* LetterGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BBC4F62B904254000D4582 /* LetterGenerator.swift */; };
-		D0BBC4FC2B904254000D4582 /* PermutationGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BBC4F72B904254000D4582 /* PermutationGenerator.swift */; };
+		D0BBC4FC2B904254000D4582 /* WordGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BBC4F72B904254000D4582 /* WordGenerator.swift */; };
 		D0BBC4FE2B904278000D4582 /* LetterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BBC4FD2B904278000D4582 /* LetterButton.swift */; };
 		D0BBC5022B905012000D4582 /* words_alpha.txt in Resources */ = {isa = PBXBuildFile; fileRef = D0BBC5002B905012000D4582 /* words_alpha.txt */; };
 		D0BBC5032B905012000D4582 /* LetterBank.txt in Resources */ = {isa = PBXBuildFile; fileRef = D0BBC5012B905012000D4582 /* LetterBank.txt */; };
@@ -40,7 +40,7 @@
 		D0BBC4F42B904254000D4582 /* DictionaryWords.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryWords.swift; sourceTree = "<group>"; };
 		D0BBC4F52B904254000D4582 /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		D0BBC4F62B904254000D4582 /* LetterGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LetterGenerator.swift; sourceTree = "<group>"; };
-		D0BBC4F72B904254000D4582 /* PermutationGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PermutationGenerator.swift; sourceTree = "<group>"; };
+		D0BBC4F72B904254000D4582 /* WordGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordGenerator.swift; sourceTree = "<group>"; };
 		D0BBC4FD2B904278000D4582 /* LetterButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LetterButton.swift; path = ../../../../Test/Test/Views/Components/LetterButton.swift; sourceTree = "<group>"; };
 		D0BBC5002B905012000D4582 /* words_alpha.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = words_alpha.txt; sourceTree = "<group>"; };
 		D0BBC5012B905012000D4582 /* LetterBank.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LetterBank.txt; sourceTree = "<group>"; };
@@ -133,7 +133,7 @@
 				D0BBC4F42B904254000D4582 /* DictionaryWords.swift */,
 				D0BBC4F52B904254000D4582 /* Errors.swift */,
 				D0BBC4F62B904254000D4582 /* LetterGenerator.swift */,
-				D0BBC4F72B904254000D4582 /* PermutationGenerator.swift */,
+				D0BBC4F72B904254000D4582 /* WordGenerator.swift */,
 				D0BBC5042B905512000D4582 /* Extensions.swift */,
 			);
 			path = Utility;
@@ -228,7 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0BBC4FE2B904278000D4582 /* LetterButton.swift in Sources */,
-				D0BBC4FC2B904254000D4582 /* PermutationGenerator.swift in Sources */,
+				D0BBC4FC2B904254000D4582 /* WordGenerator.swift in Sources */,
 				D0BBC4F82B904254000D4582 /* LetterSets.swift in Sources */,
 				D0BBC4B72B904184000D4582 /* ContentView.swift in Sources */,
 				D0BBC4FB2B904254000D4582 /* LetterGenerator.swift in Sources */,
