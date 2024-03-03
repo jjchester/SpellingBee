@@ -32,6 +32,7 @@ struct ContentView: View {
             .padding()
             if !errorText.isEmpty {
                 Text(errorText)
+                    .padding()
                     .background(.black.opacity(0.8))
                     .clipShape(RoundedRectangle(cornerRadius: 16))
                     .font(.largeTitle)
@@ -121,27 +122,29 @@ struct ContentView: View {
     }
     
     private func submitWord() {
-        var err: String = ""
-        if (!DictionaryWords.shared.exists(selectedLetters)) {
-            err += "Not a valid word"
+        var errorMessages: [String] = []
+
+        if !DictionaryWords.shared.exists(selectedLetters) {
+            errorMessages.append("Not a valid word")
         }
-        if (!selectedLetters.contains(requiredLetter)) {
-            err += "Word must contain \"\(requiredLetter)\""
+        if !selectedLetters.contains(requiredLetter) {
+            errorMessages.append("Word must contain \"\(requiredLetter)\"")
         }
-        if (foundWords.contains(selectedLetters)) {
-            err += "You have already guessed this word"
+        if foundWords.contains(selectedLetters) {
+            errorMessages.append("You have already guessed this word")
         }
-        if err.isEmpty {
+
+        if errorMessages.isEmpty {
             withAnimation(.none) {
                 foundWords.append(selectedLetters)
             }
             selectedLetters = ""
         } else {
             withAnimation(.easeInOut) {
-                errorText = err
-                DispatchQueue.main.asyncAfter(deadline: .now() + 2, execute: {
+                errorText = errorMessages.joined(separator: "\n")
+                DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
                     errorText = ""
-                })
+                }
             }
         }
     }
